@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		364FDBA129752A1E002E4FC2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364FDBA029752A1E002E4FC2 /* StoreKit.framework */; };
+		364FDBA329753767002E4FC2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FDBA229753767002E4FC2 /* BaseViewController.swift */; };
+		364FDBA629753983002E4FC2 /* SwiftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FDBA429753983002E4FC2 /* SwiftButton.swift */; };
+		364FDBA729753983002E4FC2 /* StackBottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FDBA529753983002E4FC2 /* StackBottomBarView.swift */; };
+		364FDBAB29753994002E4FC2 /* UserInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FDBA829753994002E4FC2 /* UserInfoCenter.swift */; };
+		364FDBAC29753994002E4FC2 /* IAPCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FDBA929753994002E4FC2 /* IAPCenter.swift */; };
+		364FDBAD29753994002E4FC2 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FDBAA29753994002E4FC2 /* KeyboardHelper.swift */; };
+		364FDBAF297539A5002E4FC2 /* CodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FDBAE297539A5002E4FC2 /* CodeModel.swift */; };
 		8398D68727D6497800FE8689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398D68627D6497800FE8689 /* AppDelegate.swift */; };
-		8398D68927D6497800FE8689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398D68827D6497800FE8689 /* SceneDelegate.swift */; };
 		8398D68B27D6497800FE8689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8398D68A27D6497800FE8689 /* ViewController.swift */; };
 		8398D68E27D6497800FE8689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8398D68C27D6497800FE8689 /* Main.storyboard */; };
 		8398D69027D6497900FE8689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8398D68F27D6497900FE8689 /* Assets.xcassets */; };
@@ -20,10 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		364FDBA029752A1E002E4FC2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		364FDBA229753767002E4FC2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		364FDBA429753983002E4FC2 /* SwiftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftButton.swift; sourceTree = "<group>"; };
+		364FDBA529753983002E4FC2 /* StackBottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackBottomBarView.swift; sourceTree = "<group>"; };
+		364FDBA829753994002E4FC2 /* UserInfoCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCenter.swift; sourceTree = "<group>"; };
+		364FDBA929753994002E4FC2 /* IAPCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPCenter.swift; sourceTree = "<group>"; };
+		364FDBAA29753994002E4FC2 /* KeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		364FDBAE297539A5002E4FC2 /* CodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeModel.swift; sourceTree = "<group>"; };
 		8398D68327D6497800FE8689 /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8398D68627D6497800FE8689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8398D68827D6497800FE8689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8398D68A27D6497800FE8689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8398D68D27D6497800FE8689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8398D68F27D6497900FE8689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				364FDBA129752A1E002E4FC2 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +58,6 @@
 		364FDB9F29752A1E002E4FC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				364FDBA029752A1E002E4FC2 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,6 +92,13 @@
 		8398D69A27D6499500FE8689 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				364FDBAE297539A5002E4FC2 /* CodeModel.swift */,
+				364FDBA929753994002E4FC2 /* IAPCenter.swift */,
+				364FDBAA29753994002E4FC2 /* KeyboardHelper.swift */,
+				364FDBA829753994002E4FC2 /* UserInfoCenter.swift */,
+				364FDBA529753983002E4FC2 /* StackBottomBarView.swift */,
+				364FDBA429753983002E4FC2 /* SwiftButton.swift */,
+				364FDBA229753767002E4FC2 /* BaseViewController.swift */,
 				8398D68A27D6497800FE8689 /* ViewController.swift */,
 				8398D69C27D649C400FE8689 /* KeyboardViewController.swift */,
 				8398D69E27D649D500FE8689 /* BoardViewController.swift */,
@@ -96,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				8398D68627D6497800FE8689 /* AppDelegate.swift */,
-				8398D68827D6497800FE8689 /* SceneDelegate.swift */,
 				8398D68C27D6497800FE8689 /* Main.storyboard */,
 				8398D68F27D6497900FE8689 /* Assets.xcassets */,
 				8398D69127D6497900FE8689 /* LaunchScreen.storyboard */,
@@ -175,11 +189,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364FDBAD29753994002E4FC2 /* KeyboardHelper.swift in Sources */,
 				8398D68B27D6497800FE8689 /* ViewController.swift in Sources */,
+				364FDBAF297539A5002E4FC2 /* CodeModel.swift in Sources */,
 				8398D68727D6497800FE8689 /* AppDelegate.swift in Sources */,
-				8398D68927D6497800FE8689 /* SceneDelegate.swift in Sources */,
+				364FDBA729753983002E4FC2 /* StackBottomBarView.swift in Sources */,
+				364FDBAC29753994002E4FC2 /* IAPCenter.swift in Sources */,
 				8398D6A127D64BF500FE8689 /* KeyCell.swift in Sources */,
+				364FDBAB29753994002E4FC2 /* UserInfoCenter.swift in Sources */,
 				8398D69D27D649C400FE8689 /* KeyboardViewController.swift in Sources */,
+				364FDBA629753983002E4FC2 /* SwiftButton.swift in Sources */,
+				364FDBA329753767002E4FC2 /* BaseViewController.swift in Sources */,
 				8398D69F27D649D500FE8689 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -312,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -337,16 +357,20 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.anna.wordle;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.anna.wordleGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -365,16 +389,20 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.anna.wordle;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.anna.wordleGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

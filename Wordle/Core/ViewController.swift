@@ -12,10 +12,63 @@ import UIKit
 // Game board
 // Orange/Green
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     let answers = [
-        "later", "bloke", "there", "ultra"
+        "later",
+        "bloke",
+        "there",
+        "ultra",
+        "medal",
+        "entry",
+        "brave",
+        "tiger",
+        "split",
+        "robot",
+        "groan",
+        "wagon",
+        "witch",
+        "drama",
+        "disco",
+        "blank",
+        "asset",
+        "build",
+        "raise",
+        "award",
+        "slide",
+        "spill",
+        "chase",
+        "shelf",
+        "solid",
+        "guilt",
+        "belly",
+        "false",
+        "round",
+        "panic",
+        "hobby",
+        "limit",
+        "frank",
+        "patch",
+        "ferry",
+        "stool",
+        "total",
+        "lunch",
+        "rumor",
+        "floor",
+        "drill",
+        "giant",
+        "check",
+        "carry",
+        "crowd",
+        "brick",
+        "eagle",
+        "doubt",
+        "radio",
+        "haunt",
+        "model",
+        "shaft",
+        "plane",
+        "trace"
     ]
 
     var answer = ""
@@ -26,6 +79,12 @@ class ViewController: UIViewController {
 
     let keyboardVC = KeyboardViewController()
     let boardVC = BoardViewController()
+    
+    var empty: Int = 30
+    var currentTextCount: Int = 0
+    
+    var currentAnswer: String = ""
+    var gameDone: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +122,29 @@ class ViewController: UIViewController {
             keyboardVC.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
+    
+    func judge() {
+        
+        var susuess: Bool = false
+
+        if self.answer == self.currentAnswer {
+            susuess = true
+        }
+        
+        self.showSingleAlert(title: susuess ? "答對囉" : "答錯囉",
+                             message: susuess ? "恭喜你答對囉" : "答錯囉，答案是\n\(self.answer)",
+                             confirmTitle: "點我重新遊戲",
+                             confirmAction: { [weak self] in
+            self?.guesses = Array(repeating: Array(repeating: nil, count: 5),count: 6)
+            self?.answer = self?.answers.randomElement() ?? "there"
+            self?.currentTextCount = 0
+            self?.currentAnswer = ""
+            self?.boardVC.reloadData()
+        })
+        
+        
+    }
+    
 }
 
 extension ViewController: KeyboardViewControllerDelegate {
@@ -71,10 +153,13 @@ extension ViewController: KeyboardViewControllerDelegate {
         // Update guesses
         var stop = false
 
+        
         for i in 0..<guesses.count {
             for j in 0..<guesses[i].count {
                 if guesses[i][j] == nil {
                     guesses[i][j] = letter
+                    currentTextCount += 1
+                    self.currentAnswer.append(letter)
                     stop = true
                     break
                 }
@@ -86,6 +171,10 @@ extension ViewController: KeyboardViewControllerDelegate {
         }
 
         boardVC.reloadData()
+
+        if (self.empty == self.currentTextCount) || self.answer == self.currentAnswer {
+            self.judge()
+        }
     }
 }
 
