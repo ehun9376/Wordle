@@ -33,6 +33,7 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.collectionView.backgroundColor = .gray
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
@@ -63,6 +64,7 @@ extension KeyboardViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
             fatalError()
         }
+        cell.backgroundColor = .black
         let letter = keys[indexPath.section][indexPath.row]
         cell.configure(with: letter)
         return cell

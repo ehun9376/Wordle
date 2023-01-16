@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         answer = answers.randomElement() ?? "after"
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .black
         addChildren()
     }
 
